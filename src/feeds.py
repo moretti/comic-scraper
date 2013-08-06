@@ -8,30 +8,26 @@ def fetch_feed(url):
     f = feedparser.parse(url)
 
     feed = models.Feed()
-    feed.url = f.feed.link
-    feed.title = f.feed.title
+    feed.link = f.feed.get('link')
+    feed.title = f.feed.get('title')
+    feed.author = f.feed.get('author')
 
-    updated = get_first_or_default(
-        f.feed, ('updated_parsed', 'published_parsed'))
-    if updated:
-        feed.updated = dt.datetime.fromtimestamp(time.mktime(updated))
+    entries = []
+    for e in f.entries:
+        entry = models.Entry()
+        entry.link = e.get('link')
+        entry.title = e.get('title')
 
-    stories = []
-    for entry in f.entries:
-        story = models.Story()
-        story.url = entry.link
-        story.title = entry.title
+        published = get_first_or_default(
+            e, ('updated_parsed', 'published_parsed'))
+        if published:
+            entry.published = dt.datetime.fromtimestamp(time.mktime(published))
 
-        updated = get_first_or_default(
-            entry, ('updated_parsed', 'published_parsed'))
-        if updated:
-            story.updated = dt.datetime.fromtimestamp(time.mktime(updated))
+        entry.content = e.description
 
-        story.content = entry.description
+        entries.append(entry)
 
-        stories.append(story)
-
-    return (feed, stories)
+    return (feed, entries)
 
 
 def get_first_or_default(d, sequence, default=None):

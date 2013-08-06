@@ -2,16 +2,17 @@ from google.appengine.ext import ndb
 
 
 class Feed(ndb.Model):
-    url = ndb.StringProperty()
     title = ndb.StringProperty()
-    updated = ndb.DateTimeProperty()
+    link = ndb.StringProperty()
+    description = ndb.StringProperty()
+    author = ndb.StringProperty()
     checked = ndb.DateTimeProperty()
 
 
-class Story(ndb.Model):
-    parent = ndb.KeyProperty()
-    url = ndb.StringProperty()
+class Entry(ndb.Model):
+    feed = ndb.KeyProperty()
     title = ndb.StringProperty()
-    updated = ndb.DateTimeProperty()
-    checked = ndb.DateTimeProperty()
+    link = ndb.StringProperty()
     content = ndb.TextProperty()
+    published = ndb.DateTimeProperty()
+    checked = ndb.DateTimeProperty()
