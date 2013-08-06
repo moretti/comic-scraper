@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+	<channel>
+		<title>xkcd.com</title>
+		<link>http://xkcd.com/</link>
+		<description>xkcd.com: A webcomic of romance and math humor.</description>
+		<language>en</language>
+		<item>
+			<title>The Mother of All Suspicious Files</title>
+			<link>http://xkcd.com/1247/</link>
+			<description>&lt;img src=&quot;http://imgs.xkcd.com/comics/the_mother_of_all_suspicious_files.png&quot; title=&quot;Better change the URL to 'https' before downloading.&quot; alt=&quot;Better change the URL to 'https' before downloading.&quot; /&gt;</description>
+			<pubDate>Mon, 05 Aug 2013 04:00:00 -0000</pubDate>
+			<guid>http://xkcd.com/1247/</guid>
+		</item>
+		<item>
+			<title>Pale Blue Dot</title>
+			<link>http://xkcd.com/1246/</link>
+			<description>&lt;img src=&quot;http://imgs.xkcd.com/comics/pale_blue_dot.png&quot; title=&quot;Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves. There is no road out of this oblivion; we must embrace it. We must join with the darkness. Ba'al the Annihilator offers us no happiness, no answers, naught but the cold embrace of the void. To imagine any other end is delusion. We must give in to the will of Ba'al, for he will one day consume us and our world alike. I therefore call on Congress to fully fund space exploration, and to join with Ba'al, the Eater of Souls. Thank you.&quot; alt=&quot;Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves. There is no road out of this oblivion; we must embrace it. We must join with the darkness. Ba'al the Annihilator offers us no happiness, no answers, naught but the cold embrace of the void. To imagine any other end is delusion. We must give in to the will of Ba'al, for he will one day consume us and our world alike. I therefore call on Congress to fully fund space exploration, and to join with Ba'al, the Eater of Souls. Thank you.&quot; /&gt;</description>
+			<pubDate>Fri, 02 Aug 2013 04:00:00 -0000</pubDate>
+			<guid>http://xkcd.com/1246/</guid>
+		</item>
+		<item>
+			<title>10-Day Forecast</title>
+			<link>http://xkcd.com/1245/</link>
+			<description>&lt;img src=&quot;http://imgs.xkcd.com/comics/10_day_forecast.png&quot; title=&quot;Oh, definitely not; they don't have Amazon Prime.&quot; alt=&quot;Oh, definitely not; they don't have Amazon Prime.&quot; /&gt;</description>
+			<pubDate>Wed, 31 Jul 2013 04:00:00 -0000</pubDate>
+			<guid>http://xkcd.com/1245/</guid>
+		</item>
+		<item>
+			<title>Six Words</title>
+			<link>http://xkcd.com/1244/</link>
+			<description>&lt;img src=&quot;http://imgs.xkcd.com/comics/six_words.png&quot; title=&quot;Ahem. We are STRICTLY an Orbiter shop.&quot; alt=&quot;Ahem. We are STRICTLY an Orbiter shop.&quot; /&gt;</description>
+			<pubDate>Mon, 29 Jul 2013 04:00:00 -0000</pubDate>
+			<guid>http://xkcd.com/1244/</guid>
+		</item>
+	</channel>
+</rss>
