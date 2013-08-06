@@ -9,22 +9,25 @@ def get_feeds():
         'http://feeds.feedburner.com/Foxtrotcom?format=xml',
         'http://www.phdcomics.com/gradfeed.php'
     )
+    feedz = []
     entries = []
 
     for url in urls:
-        _, e = feeds.fetch_feed(url)
+        f, e = feeds.fetch_feed(url)
+        feedz.append(f)
         entries += e
 
+    feedz.sort(key=lambda x: x.title)
     entries.sort(key=lambda x: x.published)
 
-    return entries
+    return feedz, entries
 
 class Index(webapp2.RequestHandler):
 
     def get(self):
-        entries = get_feeds()
+        feedz, entries = get_feeds()
         template = settings.JINJA_ENVIRONMENT.get_template('templates/index.html')
-        self.response.write(template.render({'entries' : entries}))
+        self.response.write(template.render({'entries' : entries, 'feeds': feedz }))
 
 app = webapp2.WSGIApplication([
     ('/', Index)

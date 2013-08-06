@@ -2,3 +2,34 @@ body {
 	padding-top: 60px;
 	padding-bottom: 40px;
 }
+
+img {
+	vertical-align: middle;
+	display: inline-block;
+	height: auto;
+	max-width: 100%;
+}
+
+.cs-sidenav {
+	background-color: #F7F5FA;
+	border-radius: 5px 5px 5px 5px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.cs-sidebar {
+	width: 270px;
+}
+
+.cs-sidebar .nav > li > a {
+	color: #716B7A;
+	display: block;
+	padding: 5px 20px;
+}
+
+.cs-entries {
+	text-align: center;
+}
