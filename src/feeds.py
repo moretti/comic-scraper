@@ -23,7 +23,12 @@ def fetch_feed(url):
         if published:
             entry.published = dt.datetime.fromtimestamp(time.mktime(published))
 
-        entry.content = e.description
+        if 'content' in e and e.content and isinstance(e.content, list):
+            first_content = e.content[0]
+            content = first_content.get('value')
+        else:
+            content = e.get('description')
+        entry.content = content
 
         entries.append(entry)
 
