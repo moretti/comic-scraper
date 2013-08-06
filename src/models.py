@@ -14,5 +14,6 @@ class Entry(ndb.Model):
     title = ndb.StringProperty()
     link = ndb.StringProperty()
     content = ndb.TextProperty()
+    image_content = ndb.TextProperty()
     published = ndb.DateTimeProperty()
     checked = ndb.DateTimeProperty()

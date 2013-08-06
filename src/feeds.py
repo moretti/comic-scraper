@@ -2,6 +2,7 @@ import feedparser
 import models
 import time
 import datetime as dt
+from bs4 import BeautifulSoup
 
 
 def fetch_feed(url):
@@ -30,9 +31,24 @@ def fetch_feed(url):
             content = e.get('description')
         entry.content = content
 
+        if content:
+            entry.image_content = get_comic_image(content)
+
         entries.append(entry)
 
     return (feed, entries)
+
+VALID_IMAGE_ATTRIBUTES = ('alt', 'title', 'src')
+
+
+def get_comic_image(html):
+    soup = BeautifulSoup(html)
+    img = soup.find('img')
+    if img:
+        img.attrs = {key: value for key, value in img.attrs.iteritems() if key in VALID_IMAGE_ATTRIBUTES}
+        return unicode(img)
+    else:
+        return None
 
 
 def get_first_or_default(d, sequence, default=None):
