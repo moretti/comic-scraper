@@ -4,6 +4,8 @@ import time
 import datetime as dt
 from bs4 import BeautifulSoup
 
+VALID_IMAGE_ATTRIBUTES = ('alt', 'title', 'src')
+
 
 def fetch_feed(url):
     f = feedparser.parse(url)
@@ -37,8 +39,6 @@ def fetch_feed(url):
         entries.append(entry)
 
     return (feed, entries)
-
-VALID_IMAGE_ATTRIBUTES = ('alt', 'title', 'src')
 
 
 def get_comic_image(html):
