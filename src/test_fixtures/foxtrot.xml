@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+
+<channel>
+	<title>FoxTrot.com</title>
+	
+	<link>http://www.foxtrot.com</link>
+	<description>by Bill Amend</description>
+	<lastBuildDate>Sun, 04 Aug 2013 05:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.4.2</generator>
+		<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/Foxtrotcom" /><feedburner:info uri="foxtrotcom" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" /><item>
+		<title>08/04/2013</title>
+		<link>http://feedproxy.google.com/~r/Foxtrotcom/~3/WsfvQzEHFmQ/</link>
+		<comments>http://www.foxtrot.com/2013/08/08042013/#comments</comments>
+		<pubDate>Sun, 04 Aug 2013 05:00:00 +0000</pubDate>
+		<dc:creator>billamend</dc:creator>
+				<category><![CDATA[Comic]]></category>
+
+		<guid isPermaLink="false">http://www.foxtrot.com/2013/08/08042013/</guid>
+		<description>&lt;p&gt;&lt;a href="http://www.foxtrot.com/2013/08/08042013/"&gt;&lt;img src="http://www.foxtrot.com/comics-rss/2013-08-04-f837a4d3.png" border="0" alt="08/04/2013" title="08/04/2013" /&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/Foxtrotcom/~4/WsfvQzEHFmQ" height="1" width="1"/&gt;</description>
+		<wfw:commentRss>http://www.foxtrot.com/2013/08/08042013/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://www.foxtrot.com/2013/08/08042013/</feedburner:origLink></item>
+		<item>
+		<title>07/28/2013</title>
+		<link>http://feedproxy.google.com/~r/Foxtrotcom/~3/ttDlxV-un6w/</link>
+		<comments>http://www.foxtrot.com/2013/07/07282013/#comments</comments>
+		<pubDate>Sun, 28 Jul 2013 05:00:00 +0000</pubDate>
+		<dc:creator>billamend</dc:creator>
+				<category><![CDATA[Comic]]></category>
+
+		<guid isPermaLink="false">http://www.foxtrot.com/2013/07/07282013/</guid>
+		<description>&lt;p&gt;&lt;a href="http://www.foxtrot.com/2013/07/07282013/"&gt;&lt;img src="http://www.foxtrot.com/comics-rss/2013-07-28-7fe6042d.png" border="0" alt="07/28/2013" title="07/28/2013" /&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/Foxtrotcom/~4/ttDlxV-un6w" height="1" width="1"/&gt;</description>
+		<wfw:commentRss>http://www.foxtrot.com/2013/07/07282013/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://www.foxtrot.com/2013/07/07282013/</feedburner:origLink></item>
+		<item>
+		<title>07/21/2013</title>
+		<link>http://feedproxy.google.com/~r/Foxtrotcom/~3/Fn0_cR0p0Bc/</link>
+		<comments>http://www.foxtrot.com/2013/07/07212013/#comments</comments>
+		<pubDate>Sun, 21 Jul 2013 05:00:00 +0000</pubDate>
+		<dc:creator>billamend</dc:creator>
+				<category><![CDATA[Comic]]></category>
+
+		<guid isPermaLink="false">http://www.foxtrot.com/2013/07/07212013/</guid>
+		<description>&lt;p&gt;&lt;a href="http://www.foxtrot.com/2013/07/07212013/"&gt;&lt;img src="http://www.foxtrot.com/comics-rss/2013-07-21-0b8bd230.png" border="0" alt="07/21/2013" title="07/21/2013" /&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/Foxtrotcom/~4/Fn0_cR0p0Bc" height="1" width="1"/&gt;</description>
+		<wfw:commentRss>http://www.foxtrot.com/2013/07/07212013/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://www.foxtrot.com/2013/07/07212013/</feedburner:origLink></item>
+	</channel>
+</rss>
