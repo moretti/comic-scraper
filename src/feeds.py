@@ -8,12 +8,13 @@ def fetch_feed(url):
     f = feedparser.parse(url)
 
     feed = models.Feed()
-    feed.url = url
+    feed.url = f.feed.link
     feed.title = f.feed.title
 
-    for prop in ('updated_parsed', 'published_parsed'):
-        if prop in f.feed:
-            feed.updated = dt.datetime.fromtimestamp(time.mktime(f.feed[prop]))
+    updated = get_first_or_default(
+        f.feed, ('updated_parsed', 'published_parsed'))
+    if updated:
+        feed.updated = dt.datetime.fromtimestamp(time.mktime(updated))
 
     stories = []
     for entry in f.entries:
@@ -21,13 +22,20 @@ def fetch_feed(url):
         story.url = entry.link
         story.title = entry.title
 
-        for prop in ('updated_parsed', 'published_parsed'):
-            if prop in entry:
-                story.updated = dt.datetime.fromtimestamp(
-                    time.mktime(entry[prop]))
+        updated = get_first_or_default(
+            entry, ('updated_parsed', 'published_parsed'))
+        if updated:
+            story.updated = dt.datetime.fromtimestamp(time.mktime(updated))
 
         story.content = entry.description
 
         stories.append(story)
 
     return (feed, stories)
+
+
+def get_first_or_default(d, sequence, default=None):
+    for element in sequence:
+        if element in d:
+            return d[element]
+    return default
