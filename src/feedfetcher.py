@@ -11,7 +11,8 @@ def fetch(url):
     f = feedparser.parse(url)
 
     feed = models.Feed()
-    feed.link = f.feed.get('link')
+    feed.link = url
+    feed.website = f.feed.get('link')
     feed.title = f.feed.get('title')
     feed.author = f.feed.get('author')
 

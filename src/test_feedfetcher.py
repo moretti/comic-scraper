@@ -16,7 +16,8 @@ def test_xkcd_feed():
 
     assert_is_not_none(feed)
     assert_equal(feed.title, 'xkcd.com')
-    assert_equal(feed.link, 'http://xkcd.com/')
+    assert_equal(feed.link, feed_path)
+    assert_equal(feed.website, 'http://xkcd.com/')
 
     assert_is_not_none(entries)
     assert_equal(len(entries), 4)
@@ -38,7 +39,8 @@ def test_doghouse_feed():
 
     assert_is_not_none(feed)
     assert_equal(feed.title, 'DOGHOUSE')
-    assert_equal(feed.link, 'http://thedoghousediaries.com')
+    assert_equal(feed.link, feed_path)
+    assert_equal(feed.website, 'http://thedoghousediaries.com')
 
     assert_is_not_none(entries)
     assert_equal(len(entries), 10)
@@ -65,6 +67,7 @@ def check_feed(feed, entries):
     assert_is_not_none(feed)
     assert_is_not_none(feed.title)
     assert_is_not_none(feed.link)
+    assert_is_not_none(feed.website)
 
     assert_is_not_none(entries)
     for entry in entries:
