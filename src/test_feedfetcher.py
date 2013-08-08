@@ -1,4 +1,4 @@
-import feeds
+import feedfetcher
 import os
 from nose.tools import *
 
@@ -12,7 +12,7 @@ FEEDS = {
 
 def test_xkcd_feed():
     feed_path = FEEDS['xkcd']
-    feed, entries = feeds.fetch_feed(feed_path)
+    feed, entries = feedfetcher.fetch(feed_path)
 
     assert_is_not_none(feed)
     assert_equal(feed.title, 'xkcd.com')
@@ -34,7 +34,7 @@ def test_xkcd_feed():
 
 def test_doghouse_feed():
     feed_path = FEEDS['doghouse']
-    feed, entries = feeds.fetch_feed(feed_path)
+    feed, entries = feedfetcher.fetch(feed_path)
 
     assert_is_not_none(feed)
     assert_equal(feed.title, 'DOGHOUSE')
@@ -57,7 +57,7 @@ def test_doghouse_feed():
 
 def test_all_feeds():
     for feed_path in FEEDS.itervalues():
-        feed, entries = feeds.fetch_feed(feed_path)
+        feed, entries = feedfetcher.fetch(feed_path)
         check_feed(feed, entries)
 
 

@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 VALID_IMAGE_ATTRIBUTES = ('alt', 'title', 'src')
 
 
-def fetch_feed(url):
+def fetch(url):
     f = feedparser.parse(url)
 
     feed = models.Feed()
